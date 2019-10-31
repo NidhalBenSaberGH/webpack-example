@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>Create Announcement</title>
+    <link href="main.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="pageheader">
+</div>
+
+<div id="body">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href=""><img src="./vintudlogo36x39.png" alt="vintud" height="32" width="34">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="vintudnavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../src/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signin.html">SignIn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">SignUp</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="createAnnouncement.html">Create Announcement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="announcements.html">List Announcements</a>
+                </li>
+            </ul>
+                    <a href="signin.html"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">logout <i class="fa fa-sign-out fa-lg"></i></button></a>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+
+        <div class="text-center">
+            <form class="form-signin" id="createForm">
+                <h1 class="h3 mb-3 font-weight-normal">Create Announcement</h1>
+                <label for="inputTitle" class="sr-only">Title</label>
+                <input type="text" id="inputTitle" class="form-control" placeholder="Title" required autofocus>
+                <label for="inputDescription" class="sr-only">Description</label>
+                <textarea id="inputDescription" class="form-control" placeholder="Description ..." rows="3"></textarea>
+                <label for="inputCategory" class="sr-only form-control-sm">Category</label>
+                <select id="inputCategory" class="custom-select d-block w-100" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="Category-1">Category-1</option>
+                    <option value="Category-2">Category-2</option>
+                    <option value="Category-3">Category-3</option>
+                    <option value="Category-4">Category-4</option>
+                </select>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Create Announcement</button>
+                <p class="mt-5 mb-3 text-muted">&copy; 2019-2020</p>
+            </form>
+        </div>
+    </main><!-- /.container -->
+</div>
+
+<div id="pagefooter">
+
+</div>
+
+<script type="text/javascript" src="main.bundle.js"></script>
+</body>
+</html>
